@@ -27,6 +27,8 @@ namespace Thunder.Bot
 
                 // return our reply to the user
                 Activity reply = activity.CreateReply($"You sent {activity.Text} which was {length} characters");
+                var ws = new ThunderBot.Weather.WeatherService();
+                reply.Text = ws.GetForecast();
                 await connector.Conversations.ReplyToActivityAsync(reply);
             }
             else
