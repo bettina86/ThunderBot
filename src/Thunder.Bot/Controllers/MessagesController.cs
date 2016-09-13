@@ -7,6 +7,7 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using Microsoft.Bot.Connector;
 using Newtonsoft.Json;
+using ThunderBot.WeatherFull;
 
 namespace Thunder.Bot
 {
@@ -27,8 +28,8 @@ namespace Thunder.Bot
 
                 // return our reply to the user
                 Activity reply = activity.CreateReply($"You sent {activity.Text} which was {length} characters");
-                var ws = new ThunderBot.Weather.WeatherService();
-                reply.Text = ws.GetForecast();
+                var ws = new WeatherService();
+                reply.Text = await ws.GetCurrentConditions(activity.Text);
                 await connector.Conversations.ReplyToActivityAsync(reply);
             }
             else

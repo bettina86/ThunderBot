@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThunderBot.Bot", "Thunder.Bot\ThunderBot.Bot.csproj", "{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThunderBot.Weather", "ThunderBot.Weather\ThunderBot.Weather.csproj", "{61778350-DBA8-4199-A613-0C0E135DBFA2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThunderBot.Weather", "ThunderBot.Weather\ThunderBot.Weather.csproj", "{DA3F1988-1710-4F16-963E-BA6D25CA39A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{61778350-DBA8-4199-A613-0C0E135DBFA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{61778350-DBA8-4199-A613-0C0E135DBFA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{61778350-DBA8-4199-A613-0C0E135DBFA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{61778350-DBA8-4199-A613-0C0E135DBFA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA3F1988-1710-4F16-963E-BA6D25CA39A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA3F1988-1710-4F16-963E-BA6D25CA39A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA3F1988-1710-4F16-963E-BA6D25CA39A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA3F1988-1710-4F16-963E-BA6D25CA39A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
