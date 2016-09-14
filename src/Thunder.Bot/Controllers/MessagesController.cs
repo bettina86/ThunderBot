@@ -1,15 +1,12 @@
-﻿using System;
-using System.Linq;
-using System.Net;
+﻿using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
-using System.Web.Http.Description;
 using Microsoft.Bot.Connector;
-using Newtonsoft.Json;
-using ThunderBot.WeatherFull;
+using Microsoft.Bot.Builder.Dialogs;
+using ThunderBot.Bot.Dialogs;
 
-namespace Thunder.Bot
+namespace ThunderBot.Bot
 {
     [BotAuthentication]
     public class MessagesController : ApiController
@@ -22,20 +19,13 @@ namespace Thunder.Bot
         {
             if (activity.Type == ActivityTypes.Message)
             {
-                ConnectorClient connector = new ConnectorClient(new Uri(activity.ServiceUrl));
-                // calculate something for us to return
-                int length = (activity.Text ?? string.Empty).Length;
-
-                // return our reply to the user
-                Activity reply = activity.CreateReply($"You sent {activity.Text} which was {length} characters");
-                var ws = new WeatherService();
-                reply.Text = await ws.GetCurrentConditions(activity.Text);
-                await connector.Conversations.ReplyToActivityAsync(reply);
+                await Conversation.SendAsync(activity, () => new LocationDialog());
             }
             else
             {
                 HandleSystemMessage(activity);
             }
+
             var response = Request.CreateResponse(HttpStatusCode.OK);
             return response;
         }

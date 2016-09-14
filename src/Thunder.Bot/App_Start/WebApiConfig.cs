@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
-namespace Thunder.Bot
+namespace ThunderBot.Bot
 {
     public static class WebApiConfig
     {

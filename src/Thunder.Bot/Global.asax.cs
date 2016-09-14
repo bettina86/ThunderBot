@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Http;
 using System.Web.Routing;
 
-namespace Thunder.Bot
+namespace ThunderBot.Bot
 {
     public class WebApiApplication : System.Web.HttpApplication
     {
