@@ -1,15 +1,13 @@
-﻿using Microsoft.Bot.Builder.Dialogs;
+﻿
+using Microsoft.Bot.Builder.Dialogs;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Threading.Tasks;
 using Microsoft.Bot.Connector;
 using ThunderBot.Weather;
 
 namespace ThunderBot.Bot.Dialogs
 {
-    [Serializable]
+	[Serializable]
     public class LocationDialog : IDialog<object>
     {
         // This is the entry point into the dialog

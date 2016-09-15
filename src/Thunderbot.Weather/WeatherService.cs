@@ -42,7 +42,7 @@ namespace ThunderBot.Weather
             var forecast = new ForecastIOPortable.ForecastApi("8703082d49387d351564670982b3bc7c");
             var weather = await forecast.GetWeatherDataAsync(loc.Latitude, loc.Longitude);
 
-			weather.Daily.Days.Where(d => d.)
+			//weather.Daily.Days.Where(d => d.)
 
             throw new NotImplementedException();
         }
